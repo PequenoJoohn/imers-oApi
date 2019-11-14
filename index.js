@@ -5,7 +5,7 @@ const requireDir = require('require-dir');
 const morgan = require('morgan');
 //Iniciando o App
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 2445;
 
 app.use(morgan('dev'));
 app.use(express.json());
